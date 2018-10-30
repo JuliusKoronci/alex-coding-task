@@ -21,19 +21,26 @@ export const withTodoList = (WrappedComponent) => {
             items: updateTodoList({
                 id,
                 items: this.state.items,
-                field: 'deleted',
-                fieldValue: (item) => !item.deleted,
+                fieldValue: (item) => {
+                    if (item.status === TODO_LIST.FILTERS.DELETED) {
+                        return { status: item.history };
+                    }
+                    return { status: TODO_LIST.FILTERS.DELETED, history: item.status };
+                },
             }),
         });
+
+        changeFilter = (filter) => this.setState({ filter });
 
         toggleStatus = (id) => this.setState({
             items: updateTodoList({
                 id,
                 items: this.state.items,
-                field: 'status',
-                fieldValue: (item) => item.status === TODO_LIST.FILTERS.CLOSED ?
-                    TODO_LIST.FILTERS.OPEN :
-                    TODO_LIST.FILTERS.CLOSED,
+                fieldValue: (item) => ({
+                    status: item.status === TODO_LIST.FILTERS.CLOSED ?
+                        TODO_LIST.FILTERS.OPEN :
+                        TODO_LIST.FILTERS.CLOSED
+                }),
             }),
         });
 
@@ -45,6 +52,7 @@ export const withTodoList = (WrappedComponent) => {
                         addItem: this.addItem,
                         toggleDelete: this.toggleDelete,
                         toggleStatus: this.toggleStatus,
+                        changeFilter: this.changeFilter,
                     }}
                 >
                     <WrappedComponent {...this.props} />

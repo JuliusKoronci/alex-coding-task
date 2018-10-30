@@ -6,7 +6,7 @@ export const createTodoItem = title => ({
     /**
      * We are adding this flag to be able to keep the status before deletion
      */
-    deleted: false,
+    history: null,
     time: new Date(),
     /**
      * This would come from a db and milliseconds are only for demo purposes
@@ -28,7 +28,7 @@ export const updateTodoList = ({ items, id, field, fieldValue }) => items.map(
         if (item.id === id) {
             return ({
                 ...item,
-                [field]: fieldValue(item)
+                ...fieldValue(item)
             })
         }
         return item;

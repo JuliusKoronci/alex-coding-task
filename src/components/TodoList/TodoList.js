@@ -10,26 +10,32 @@ import Restore from '@material-ui/icons/Restore';
 
 import { TodoConsumer } from '../../contexts';
 import { TODO_LIST } from '../../constants';
+import { selectTodosByStatus } from '../../selectors';
 
 export const TodoList = () => (
     <List>
         <TodoConsumer>
-            {({ items, toggleStatus, toggleDelete }) => items.map(item =>
-                <ListItem button key={item.id}>
-                    <ListItemIcon onClick={() => toggleStatus(item.id)}>
-                        {item.status === TODO_LIST.FILTERS.CLOSED ?
-                            <CheckBox /> :
-                            <CheckBoxOutlineBlank />}
-                    </ListItemIcon>
-                    <ListItemText
-                        style={item.deleted ? { textDecoration: 'line-through' } : {}}
-                        inset
-                        primary={item.title}
-                    />
-                    <ListItemIcon onClick={() => toggleDelete(item.id)}>
-                        {!item.deleted ? <Delete /> : <Restore />}
-                    </ListItemIcon>
-                </ListItem>)}
+            {({ items, toggleStatus, toggleDelete, filter }) => selectTodosByStatus(items, filter)
+                .map(item =>
+                    <ListItem button key={item.id}>
+                        <ListItemIcon onClick={() => toggleStatus(item.id)}>
+                            {item.status === TODO_LIST.FILTERS.CLOSED ?
+                                <CheckBox /> :
+                                <CheckBoxOutlineBlank />}
+                        </ListItemIcon>
+                        <ListItemText
+                            style={
+                                item.status === TODO_LIST.FILTERS.DELETED ?
+                                    { textDecoration: 'line-through' } :
+                                    {}
+                            }
+                            inset
+                            primary={item.title}
+                        />
+                        <ListItemIcon onClick={() => toggleDelete(item.id)}>
+                            {item.status === TODO_LIST.FILTERS.DELETED ? <Restore /> : <Delete />}
+                        </ListItemIcon>
+                    </ListItem>)}
         </TodoConsumer>
     </List>
 );

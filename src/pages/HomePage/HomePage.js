@@ -4,7 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 
 import { withTodoList } from '../../hocs';
-import { InputForm, TodoList } from '../../components';
+import { InputForm, TodoList, Filters } from '../../components';
 
 const Homepage = () => (
     <div style={{ margin: '0 auto', maxWidth: '1024px' }}>
@@ -17,6 +17,9 @@ const Homepage = () => (
                     <CardContent>
                         <Grid item xs={12}>
                             <InputForm />
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Filters />
                         </Grid>
                         <Grid item xs={12}>
                             <TodoList />
