@@ -9,3 +9,5 @@ All CRA scripts work as expected
 - Context is used for state management
 - For styling only js is used
 - Test coverage is not 100% as time constraints
+
+![TODO List](/screen.png "TODO Screen")
