@@ -7,5 +7,5 @@ All CRA scripts work as expected
 
 ### Notes
 Context is used for state management
-for styling on js is used
+for styling only js is used
 test coverage is not 100% as time constraints

@@ -17,8 +17,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="135">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -307,7 +307,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540918625352</updated>
-      <workItem from="1540918626473" duration="11938000" />
+      <workItem from="1540918626473" duration="11972000" />
     </task>
     <task id="LOCAL-00001" summary="Adding some styles and structure">
       <created>1540919137215</created>
@@ -414,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540930894936</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="small readme update">
+      <created>1540931009805</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1540931009805</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -450,7 +457,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11938000" />
+    <option name="totallyTimeSpent" value="11972000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -507,7 +514,8 @@
     <MESSAGE value="Updating readme" />
     <MESSAGE value="Adding some more tests" />
     <MESSAGE value="Little style changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Little style changes" />
+    <MESSAGE value="small readme update" />
+    <option name="LAST_COMMIT_MESSAGE" value="small readme update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -825,8 +833,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
