@@ -8,7 +8,7 @@ import { styles } from '../../styles';
 /**
  * Input form to add a todo item
  */
-const InputForm = ({ input, handleInputChange }) => (
+export const InputForm = ({ input, handleInputChange }) => (
     <TodoConsumer>
         {({ addItem }) => <TextField
             style={styles.inputForm}

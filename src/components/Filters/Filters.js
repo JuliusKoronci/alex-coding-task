@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '@material-ui/core/Button'
+import Button from '@material-ui/core/Button';
 import CheckBox from '@material-ui/icons/CheckBox';
 import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlank';
 import Delete from '@material-ui/icons/Delete';
