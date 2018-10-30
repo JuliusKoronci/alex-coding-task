@@ -6,6 +6,6 @@ Run the application via yarn start
 All CRA scripts work as expected
 
 ### Notes
-Context is used for state management
-for styling only js is used
-test coverage is not 100% as time constraints
+- Context is used for state management
+- For styling only js is used
+- Test coverage is not 100% as time constraints
