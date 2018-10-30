@@ -8,6 +8,9 @@ import { TodoConsumer } from '../../contexts';
 import { TODO_LIST } from '../../constants';
 import { selectTodosByStatus } from '../../selectors';
 
+/**
+ * Display a set of filters for todo list
+ */
 export const Filters = () => (<div>
     <TodoConsumer>
         {({ items, changeFilter, filter }) => <React.Fragment>

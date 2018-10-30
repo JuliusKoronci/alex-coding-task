@@ -1,8 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withState } from 'recompose';
 import TextField from '@material-ui/core/TextField';
 import { TodoConsumer } from '../../contexts';
 
+/**
+ * Input form to add a todo item
+ */
 const InputForm = ({ input, handleInputChange }) => (
     <TodoConsumer>
         {({ addItem }) => <TextField
@@ -19,5 +23,10 @@ const InputForm = ({ input, handleInputChange }) => (
         />}
     </TodoConsumer>
 );
+
+InputForm.propTypes = {
+    input: PropTypes.string.isRequired,
+    handleInputChange: PropTypes.func.isRequired,
+};
 
 export default withState('input', 'handleInputChange', '')(InputForm);
