@@ -13,3 +13,24 @@ export const createTodoItem = title => ({
      */
     id: (new Date()).getMilliseconds(),
 });
+
+/**
+ * Update a field of a matching item with a new value
+ *
+ * @param {Array} list - list of items
+ * @param {*} id - identifier
+ * @param {string} field - field name in item
+ * @param {Function} fieldValue - function which accepts an item and returns a new value
+ * @returns {Array} - updated list of same size
+ */
+export const updateTodoList = ({ items, id, field, fieldValue }) => items.map(
+    item => {
+        if (item.id === id) {
+            return ({
+                ...item,
+                [field]: fieldValue(item)
+            })
+        }
+        return item;
+    }
+);

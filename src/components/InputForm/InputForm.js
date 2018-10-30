@@ -10,7 +10,7 @@ const InputForm = ({ input, handleInputChange }) => (
             placeholder="Add TODO Item"
             value={input}
             onKeyPress={(event) => {
-                if (event.key === 'Enter') {
+                if (event.key === 'Enter' && event.target.value) {
                     addItem(event.target.value);
                     handleInputChange('');
                 }

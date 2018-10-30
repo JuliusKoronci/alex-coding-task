@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { TODO_LIST } from '../../constants';
 import { TodoProvider } from '../../contexts'
-import { createTodoItem } from '../../utils/todo';
+import { createTodoItem, updateTodoList } from '../../utils/todo';
 
 const initialState = {
     items: [],
@@ -17,30 +17,24 @@ export const withTodoList = (WrappedComponent) => {
             items: [...this.state.items, createTodoItem(title)]
         });
 
-        deleteItem = (id) => this.setState({
-            items: this.state.items.map(item => {
-                if (item.id === id) {
-                    return {
-                        ...item,
-                        deleted: true,
-                    }
-                }
-                return item;
-            })
+        toggleDelete = (id) => this.setState({
+            items: updateTodoList({
+                id,
+                items: this.state.items,
+                field: 'deleted',
+                fieldValue: (item) => !item.deleted,
+            }),
         });
 
         toggleStatus = (id) => this.setState({
-            items: this.state.items.map(item => {
-                if (item.id === id) {
-                    return {
-                        ...item,
-                        status: item.status === TODO_LIST.FILTERS.CLOSED ?
-                            TODO_LIST.FILTERS.OPEN :
-                            TODO_LIST.FILTERS.CLOSED,
-                    }
-                }
-                return item;
-            })
+            items: updateTodoList({
+                id,
+                items: this.state.items,
+                field: 'status',
+                fieldValue: (item) => item.status === TODO_LIST.FILTERS.CLOSED ?
+                    TODO_LIST.FILTERS.OPEN :
+                    TODO_LIST.FILTERS.CLOSED,
+            }),
         });
 
         render() {
@@ -49,7 +43,7 @@ export const withTodoList = (WrappedComponent) => {
                     value={{
                         ...this.state,
                         addItem: this.addItem,
-                        deleteItem: this.deleteItem,
+                        toggleDelete: this.toggleDelete,
                         toggleStatus: this.toggleStatus,
                     }}
                 >
