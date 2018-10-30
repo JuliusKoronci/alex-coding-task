@@ -1,5 +1,11 @@
 import { TODO_LIST } from '../constants';
 
+/**
+ * Convert a string into a valid todo item
+ *
+ * @param {string} title - title comming from the input field
+ * @returns {{title: *, status: string, history: null, time: Date, id: number}}
+ */
 export const createTodoItem = title => ({
     title,
     status: TODO_LIST.FILTERS.OPEN,

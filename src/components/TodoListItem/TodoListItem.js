@@ -11,6 +11,7 @@ import Restore from '@material-ui/icons/Restore';
 
 import { TodoConsumer } from '../../contexts';
 import { TODO_LIST } from '../../constants';
+import { styles } from '../../styles';
 
 /**
  * Single todo list item
@@ -26,7 +27,7 @@ export const TodoListItem = ({ item }) => (
             <ListItemText
                 style={
                     item.status === TODO_LIST.FILTERS.DELETED ?
-                        { textDecoration: 'line-through' } :
+                        styles.listItem.deleted :
                         {}
                 }
                 inset

@@ -5,9 +5,13 @@ import CardContent from '@material-ui/core/CardContent';
 
 import { withTodoList } from '../../hocs';
 import { InputForm, TodoList, Filters } from '../../components';
+import { styles } from '../../styles';
 
+/**
+ * The main page of the todo list responsible for the layout
+ */
 const Homepage = () => (
-    <div style={{ margin: '0 auto', maxWidth: '1024px' }}>
+    <div style={styles.layout}>
         <Grid container spacing={24}>
             <Grid item xs={12}>
                 <h3>@TODO List</h3>

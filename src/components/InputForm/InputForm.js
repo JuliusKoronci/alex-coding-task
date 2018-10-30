@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withState } from 'recompose';
 import TextField from '@material-ui/core/TextField';
 import { TodoConsumer } from '../../contexts';
+import { styles } from '../../styles';
 
 /**
  * Input form to add a todo item
@@ -10,7 +11,7 @@ import { TodoConsumer } from '../../contexts';
 const InputForm = ({ input, handleInputChange }) => (
     <TodoConsumer>
         {({ addItem }) => <TextField
-            style={{ width: '100%' }}
+            style={styles.inputForm}
             placeholder="Add TODO Item"
             value={input}
             onKeyPress={(event) => {
