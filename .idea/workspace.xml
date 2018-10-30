@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="564ac908-a903-4720-abdd-8bd675d6788e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/styles.js" afterDir="false" />
+    <list default="true" id="564ac908-a903-4720-abdd-8bd675d6788e" name="Default" comment="Adding documentation">
+      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InputForm/InputForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InputForm/InputForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoListItem/TodoListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/TodoListContext/TodoListContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/TodoListContext/TodoListContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hocs/withTodoList/withTodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hocs/withTodoList/withTodoList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="todo.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/utils/todo.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+            <state relative-caret-position="428">
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -48,7 +44,6 @@
         <option value="$PROJECT_DIR$/src/contexts/TodoListContext/index.js" />
         <option value="$PROJECT_DIR$/src/constants/TODO_LIST.js" />
         <option value="$PROJECT_DIR$/src/constants/index.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/contexts/index.js" />
         <option value="$PROJECT_DIR$/src/hocs/withTodoList/index.js" />
         <option value="$PROJECT_DIR$/src/hocs/index.js" />
@@ -71,6 +66,10 @@
         <option value="$PROJECT_DIR$/src/styles.js" />
         <option value="$PROJECT_DIR$/src/pages/HomePage/HomePage.js" />
         <option value="$PROJECT_DIR$/src/utils/todo.js" />
+        <option value="$PROJECT_DIR$/src/setupTests.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/pages/HomePage/__tests__/HomePage.test.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -133,6 +132,14 @@
               <item name="apple-todo-list" type="b2602c69:ProjectViewProjectNode" />
               <item name="apple-todo-list" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="HomePage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="__tests__" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="apple-todo-list" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apple-todo-list" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="selectors" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -173,6 +180,7 @@
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/src/pages/HomePage/__tests__/HomePage.test.js" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.4.0" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -200,7 +208,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.createTodoItem">
+  <component name="RunManager" selected="Jest.HomePage">
+    <configuration name="HomePage" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <jest-options value="--env=jsdom" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/pages/HomePage/__tests__/HomePage.test.js" />
+      <test-names>
+        <test-name value="HomePage" />
+      </test-names>
+    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -249,9 +269,11 @@
       <item itemvalue="Jest.selectTodosByStatus" />
       <item itemvalue="Jest.updateTodoList" />
       <item itemvalue="Jest.createTodoItem" />
+      <item itemvalue="Jest.HomePage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.HomePage" />
         <item itemvalue="Jest.createTodoItem" />
         <item itemvalue="Jest.updateTodoList" />
         <item itemvalue="Jest.selectTodosByStatus" />
@@ -265,7 +287,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540918625352</updated>
-      <workItem from="1540918626473" duration="9610000" />
+      <workItem from="1540918626473" duration="10327000" />
     </task>
     <task id="LOCAL-00001" summary="Adding some styles and structure">
       <created>1540919137215</created>
@@ -337,13 +359,17 @@
       <option name="project" value="LOCAL" />
       <updated>1540928049910</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adding documentation">
+      <created>1540928665090</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1540928665091</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="selectTodosByStatus_should_return_the_original_array_if_status_does_not_match - 2018.10.30 at 19h 39m 35s.xml">
-      <configuration name="selectTodosByStatus.should return the original array if status does not match" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="selectTodosByStatus_should_return_an_filtered_array_where_status_matches - 2018.10.30 at 19h 42m 23s.xml">
       <configuration name="selectTodosByStatus.should return an filtered array where status matches" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -365,9 +391,18 @@
     <history-entry file="createTodoItem - 2018.10.30 at 20h 19m 20s.xml">
       <configuration name="createTodoItem" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="HomePage - 2018.10.30 at 20h 50m 13s.xml">
+      <configuration name="HomePage" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="HomePage - 2018.10.30 at 20h 51m 01s.xml">
+      <configuration name="HomePage" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="HomePage - 2018.10.30 at 20h 51m 47s.xml">
+      <configuration name="HomePage" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9610000" />
+    <option name="totallyTimeSpent" value="10327000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -383,15 +418,15 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32969698" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32969698" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32969698" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -419,7 +454,8 @@
     <MESSAGE value="adding tests for todo" />
     <MESSAGE value="adding marker to selected filter" />
     <MESSAGE value="Breaking out todolist item" />
-    <option name="LAST_COMMIT_MESSAGE" value="Breaking out todolist item" />
+    <MESSAGE value="Adding documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding documentation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/index.js">
@@ -450,13 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -652,16 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/HomePage/HomePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="60" lean-forward="true" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/selectors/todoSelectors/todoSelectors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -676,10 +695,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/HomePage/__tests__/HomePage.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/setupTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/todo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/HomePage/HomePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
         </state>
       </provider>
     </entry>
